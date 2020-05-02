@@ -2,7 +2,7 @@ node{
 def app
 //Clone du repo
 stage('clone'){
-		git scm
+		checkout scm
 }
 stage('build image'){
 		app = docker.build('lamine/nginx') 
